@@ -19,6 +19,9 @@
                     "type" : "file",
                     "path" : "org.gnome.Boxes.Extension.OsinfoDb.metainfo.xml"
                 }
+            ],
+            "cleanup" : [
+                "/share"
             ]
         },
         {

@@ -33,7 +33,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.com/libosinfo/osinfo-db.git",
-                    "branch" : "ad59de78615257cd8b9884df48f7e4ff398e538c"
+                    "branch" : "6dc1020b3820c199e56f8bf77292f095ca67e2c0"
                 }
             ]
         }

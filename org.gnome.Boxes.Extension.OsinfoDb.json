@@ -1,39 +1,39 @@
 {
-    "id" : "org.gnome.Boxes.Extension.OsinfoDb",
-    "runtime" : "org.gnome.Boxes",
-    "runtime-version" : "stable",
-    "sdk" : "org.gnome.Sdk//3.38",
-    "build-extension" : true,
-    "separate-locales" : false,
-    "appstream-compose" : false,
-    "modules" : [
+    "id": "org.gnome.Boxes.Extension.OsinfoDb",
+    "runtime": "org.gnome.Boxes",
+    "runtime-version": "stable",
+    "sdk": "org.gnome.Sdk//3.38",
+    "build-extension": true,
+    "separate-locales": false,
+    "appstream-compose": false,
+    "modules": [
         {
-            "name" : "appdata",
-            "buildsystem" : "simple",
-            "build-commands" : [
+            "name": "appdata",
+            "buildsystem": "simple",
+            "build-commands": [
                 "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo org.gnome.Boxes.Extension.OsinfoDb.metainfo.xml",
                 "appstream-compose --basename=org.gnome.Boxes.Extension.OsinfoDb --prefix=${FLATPAK_DEST} --origin=flatpak org.gnome.Boxes.Extension.OsinfoDb"
             ],
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "file",
-                    "path" : "org.gnome.Boxes.Extension.OsinfoDb.metainfo.xml"
+                    "type": "file",
+                    "path": "org.gnome.Boxes.Extension.OsinfoDb.metainfo.xml"
                 }
             ]
         },
         {
-            "name" : "osinfo-db",
-            "buildsystem" : "simple",
+            "name": "osinfo-db",
+            "buildsystem": "simple",
             "builddir": true,
-            "build-commands" : [
+            "build-commands": [
                 "make",
                 "osinfo-db-import --dir /app/share/osinfo/ osinfo-db-*.tar.xz"
             ],
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.com/libosinfo/osinfo-db.git",
-                    "branch" : "d316eee8d82a28664d28bb3fa0c889cd05985c0e"
+                    "type": "git",
+                    "url": "https://gitlab.com/libosinfo/osinfo-db.git",
+                    "branch": "d316eee8d82a28664d28bb3fa0c889cd05985c0e"
                 }
             ]
         }

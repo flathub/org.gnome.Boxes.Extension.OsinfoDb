@@ -34,7 +34,16 @@
                     "type": "git",
                     "url": "https://gitlab.com/libosinfo/osinfo-db.git",
                     "commit": "d316eee8d82a28664d28bb3fa0c889cd05985c0e",
-                    "tag": "v20210215"
+                    "tag": "v20210215",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://gitlab.com/api/v4/projects/libosinfo%2Fosinfo-db/repository/tags",
+                        "tag-query": "first | .name",
+                        "commit-query": "first | .commit.id",
+                        "timestamp-query": "first | .commit.committed_date",
+                        "version-query": "$tag | sub(\"^[vV]\"; \"\")",
+                        "is-main-source": true
+                    }
                 }
             ]
         }

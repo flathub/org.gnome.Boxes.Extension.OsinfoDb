@@ -33,8 +33,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.com/libosinfo/osinfo-db.git",
-                    "commit": "4cbc72a1b492fa23472b08ff7c176bb8cd29d3cb",
-                    "tag": "v20220214",
+                    "commit": "625fc22219b60952d395eed739a17fde6cf15eb7",
+                    "tag": "v20220516",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://gitlab.com/api/v4/projects/libosinfo%2Fosinfo-db/repository/tags",

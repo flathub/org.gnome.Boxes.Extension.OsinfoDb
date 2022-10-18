@@ -9,6 +9,7 @@
   <project_license>GPL-2.0+</project_license>
   <update_contact>felipeborges_AT_gnome.org</update_contact>
   <releases>
+    <release version="20221018" date="2022-10-17"/>
     <release version="20220830" date="2022-08-26"/>
     <release version="20220516" date="2022-05-16"/>
     <release version="20220214" date="2022-02-14"/>

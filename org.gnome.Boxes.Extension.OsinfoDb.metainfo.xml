@@ -9,8 +9,11 @@
   <project_license>GPL-2.0+</project_license>
   <update_contact>felipeborges_AT_gnome.org</update_contact>
   <releases>
-    <release version="20240523" date="2024-05-23">
+    <release version="20240701" date="2024-07-01">
       <description></description>
+    </release>
+    <release version="20240523" date="2024-05-23">
+      <description/>
     </release>
     <release version="20240510" date="2024-05-10"/>
     <release version="20231215" date="2023-12-15"/>
